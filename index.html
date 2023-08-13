@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beasiswa</title>
+    <!-- Menghubungkan Tampilan Website ke Library Boostrap -->
+    <link rel="stylesheet" type="text/css" href="./style/bootstrap/css/bootstrap.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-3">
+                <div class="container">
+                    <h2 class="text-center">Daftar Beasiswa</h2>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nama</label>
+                        <input id="nama" type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Email</label>
+                        <input id="email" type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Semester Saat Ini</label>
+                        <select id="semester" class="form-select" aria-label="Default select example">
+                            <option selected>Pilih Semester</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">IPK</label>
+                        <input id="ipk" type="number" class="form-control" id="exampleFormControlInput1" value="3"
+                            disabled>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Jenis Beasiswa</label>
+                        <select id="jenis-beasiswa" class="form-select" aria-label="Default select example">
+                            <option selected>Pilih Jenis Beasiswa</option>
+                            <option value="Beasiswa Akademik">Beasiswa Akademik</option>
+                            <option value="Beasiswa Non Akademik">Beasiswa Non Akademik</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Dokumen Tambahan</label>
+                        <input id="file" type="file" class="form-control" id="inputGroupFile01">
+                    </div>
+                    <div>
+                        <button id="submit" class="btn btn-success" type="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="text-center">
+                    <h2>Tampil Data</h2>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">Nama</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Semester</th>
+                            <th scope="col">IPK</th>
+                            <th scope="col">Jenis Beaiswa</th>
+                            <th scope="col">File</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-view">
+                        <!-- content input view -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./style/bootstrap/js/bootstrap.js"></script>
+    <script src="register.js">
+    </script>
+</body>
+
+</html>
